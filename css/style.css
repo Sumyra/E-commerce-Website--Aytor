@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primaryFont:'Josefin Sans', sans-serif;
+    --secondaryFont:'Roboto', sans-serif;
+    --primaryColor:  #FF6F61;
+    --secondaryColor:  #11161E;
+    --thirdColor: #1D1D1D;
+}
+.button{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 16px 37.5px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+ 
+}
+body{
+    font-family: var(--primaryFont);
+    color: white;
+}
+
+#myNavbar ul li a{
+    color: var(--secondaryColor);
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+padding: 42px 15px;
+
+}
+#myNavbar ul li a:hover{
+    color: var(--primaryColor);
+}
+
+.iconsDiv li{
+    display: inline-block;
+  
+}
+
+nav .iconsDiv ul li span
+{
+  font-size: 20px;
+  padding: 0 10px;
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
+nav .iconsDiv ul li a{
+    font-size: 20px;
+    padding: 0 10px;
+    color: var(--secondaryColor);
+    position: relative;
+
+}
+
+nav .iconsDiv ul li a .overlay{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    color: white;
+    background-color: var(--primaryColor);
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 0;
+    line-height: 15px;
+    display: block;
+    top: -4px;
+    right: 3px;
+   
+
+}
+nav .togglerButton{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    padding: 0 16px;
+}
+ nav #smallMenu  .offCanvasLogo{
+    height: 40px;
+}
+nav #smallMenu .small_menu li a{
+ color: var(--secondaryColor);
+ font-size: 20px;
+ border-bottom: 1px solid rgba(255, 255, 255, 0);
+ display: block;
+ padding: 10px 20px;
+
+}
+
+ .downArrow {
+   
+    color: rgb(113, 113, 113);
+}
+.iconsDiv ul{
+        text-align: center;
+    
+}
+#banner{
+    position: relative;
+}
+ #banner  .banner_slider{
+  height: 800px;
+  background-size: cover;
+  background-position: center;
+}
+#banner  .banner_slider .row{
+    height: 800px;
+}
+#banner .banner_slider .banner_Cnt h6{
+    font-weight: 600;
+font-size: 18px;
+line-height: 28px;
+color: var(--thirdColor);
+padding: 15px 0;
+
+
+
+}
+#banner .banner_slider .banner_Cnt{
+    width:45%;
+}
+#banner .banner_slider .banner_Cnt h2{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 74px;
+    color: var(--thirdColor);
+    padding: 5px 0;
+    transition-delay: 0.3s;
+}
+#banner .banner_slider .banner_Cnt p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: var(--thirdColor);
+margin: 15px 0;
+transition-delay: 0.5s;
+}
+#banner .banner_slider .banner_Cnt a{
+    transition-delay: 0.7s;
+}
+#banner .banner_slider .banner_Cnt a:hover{
+    background-color:#fff9e6 ;
+    color: var(--primaryColor);
+    outline: 1px dashed #000;
+
+
+}
+#banner .banner_slider .banner_Cnt .rightArrow{
+    
+    font-size: 22px;
+    font-weight: 400;
+
+   }
+#banner .banner_slider .banner_Cnt .button:hover .rightArrow{
+    margin-left: 10px;
+    transition: 0.4s;
+    font-size: 28px;
+}
+#banner .banner_slider .banner_Cnt > *{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+#banner .banner_slider.slick-active .banner_Cnt > * {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+#banner .slick-dots{
+    position: absolute;
+    bottom: 185px;
+    left: 77px;
+}
+#banner .slick-dots button{
+    width: 25px;
+    height: 8px;
+    color: transparent;
+    border: none;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+#banner .slick-dots li{
+    display: inline-block;
+    margin-left: 5px ;
+}
+#banner .slick-dots .slick-active button{
+    width: 40px;
+    background-color: var(--primaryColor);
+}
+#categories{
+    padding: 50px 0;
+}
+#categories .categories_card img{
+    width: 100%;
+    display: block;
+}
+#categories .categories_card :nth-child(1){
+    margin-bottom: 15px;
+}
+#categories .categories_card .overlay{
+    position: absolute;
+    inset: 20px;
+    background: rgba(17, 22, 30, 1);
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    transform:scale(0);
+  }
+  .overlay .row{
+    height: 100%;}
+  
+    #categories .categories_card:hover .overlay{
+   
+    transform:scale(1);
+  }
